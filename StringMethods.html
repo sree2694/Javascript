@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods & Properties</h2>
+
+<p>The length property returns the length of a string:</p>
+
+<p id="demo"></p>
+<p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
+<p id="demo1"></p>
+<p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p>
+
+<p id="demo2"></p>
+
+<p>The search() method returns the position of the first occurrence of a specified text in a string:</p>
+
+<p id="demo3"></p>
+
+<script>
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+document.getElementById("demo").innerHTML = sln;
+
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+document.getElementById("demo1").innerHTML = pos;
+
+var pos = str.lastIndexOf("locate");
+document.getElementById("demo2").innerHTML = pos;
+
+var pos = str.search("locate");
+document.getElementById("demo3").innerHTML = pos;
+</script>
+
+</body>
+</html>
+
